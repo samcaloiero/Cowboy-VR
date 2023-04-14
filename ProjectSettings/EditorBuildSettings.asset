@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Chase Sam 4-11.unity
-    guid: 702265e2b2d87a0499609566fab56c1c
+    path: Assets/Scenes/OBI.unity
+    guid: c96fdbd38edf3f34d9097e7b03a34b4f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f1c6a84fea291814c90d39eb790da117,
       type: 2}
