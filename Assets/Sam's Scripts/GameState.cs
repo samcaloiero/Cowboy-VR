@@ -1,8 +1,7 @@
 
 
-public enum Gamestate
+public enum GameState
 {
-    
     Gameplay,
     GameOver,
     Victory

@@ -8,7 +8,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/BulletHit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Locomotion/Continuous/ActionBasedContinuousMoveProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -88,6 +91,10 @@
       <workItem from="1681429926033" duration="95000" />
       <workItem from="1681430318786" duration="314000" />
       <workItem from="1681430658961" duration="892000" />
+      <workItem from="1681606343695" duration="85000" />
+      <workItem from="1681606494843" duration="172000" />
+      <workItem from="1681656324748" duration="36000" />
+      <workItem from="1681656371495" duration="6294000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: 2777b8f0ccdd7634f95dd96aa8fdfef1
+  - enabled: 1
+    path: Assets/Scenes/OBI SAM 4-16.unity
+    guid: c68145c4b64030d4198a3861dc6486f8
+  - enabled: 0
     path: Assets/Scenes/Chase Sam 2.unity
     guid: 702265e2b2d87a0499609566fab56c1c
   - enabled: 0
