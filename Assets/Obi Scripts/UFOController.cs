@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class UFOController : MonoBehaviour
 {
-    public float recoilForce = 10f;
     public int bulletCollisionCount = 0;
     public int maxBulletCollisions = 5;
-    public float movementSpeed = 5f;
     public float targetHeight = 10f;
+    public float speed = 5f;  // The speed at which to move the object
+
+    private bool movingUp = true;  // Whether the object is currently moving up or not
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -19,21 +20,17 @@ public class UFOController : MonoBehaviour
             {
                 MoveUp();
             }
-            else
-            {
-                Recoil();
-            }
         }
     }
-
-    private void Recoil()
-    {
-        Vector3 direction = (transform.position - Camera.main.transform.position).normalized;
-        GetComponent<Rigidbody>().AddForce(direction * recoilForce, ForceMode.Impulse);
-    }
-
     private void MoveUp()
     {
-        GetComponent<Rigidbody>().velocity = Vector3.up * movementSpeed;
+        if (movingUp)
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime); // Move the object upwards
+            if (transform.position.y >= targetHeight)
+            {
+                movingUp = false;
+            }
+        }
     }
 }

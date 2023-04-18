@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OBI SAM 4-16.unity
     guid: c68145c4b64030d4198a3861dc6486f8
   - enabled: 0
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/JOHN.unity
     guid: 58b2a1d249c480f4891d6ebd74e3fa17
+  - enabled: 1
+    path: Assets/Scenes/OBI.unity
+    guid: c96fdbd38edf3f34d9097e7b03a34b4f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f1c6a84fea291814c90d39eb790da117,
       type: 2}
