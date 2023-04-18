@@ -6,17 +6,18 @@ public class EnemySpawnController : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public int numEnemies = 10;
+   // private int enemyCount;
     public float spawnRadius = 10f;
     public List<Transform> spawnPoints;
 
     void Start()
     {
-        SpawnEnemies();
+        
     }
 
-    void SpawnEnemies()
+    public void SpawnEnemies(int enemyCount)
     {
-        for (int i = 0; i < numEnemies; i++)
+        for (int i = 0; i < enemyCount; i++)
         {
             Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
             Vector3 randomPos = Random.insideUnitSphere * spawnRadius;

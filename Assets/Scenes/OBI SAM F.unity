@@ -1854,6 +1854,8 @@ MonoBehaviour:
   gameState: 0
   enemySpawner: {fileID: 740309575}
   numberOfAliens: 0
+  enemySpawnController: {fileID: 740309575}
+  enemyCount: 0
   numberOfCows: 0
 --- !u!4 &1524801279
 Transform:
