@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,27 +10,28 @@ public class GameManager : MonoBehaviour
     public EnemySpawnController enemySpawner;
     public int numberOfAliens;
     public EnemySpawnController enemySpawnController;
-    public int enemyCount;
+    [FormerlySerializedAs("enemyCount")] public int numEnemiesSpawn;
 
     [SerializeField] private int numberOfCows;
     // Start is called before the first frame update
     void Awake()
     {
         gameState = GameState.Gameplay;
-        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
         numberOfCows = cows.Length;
-        Debug.Log("number of cows" + numberOfCows);
+       
     }
 
     private void Update()
     {
         //GetGameState();
-        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
         numberOfCows = cows.Length;
+        Debug.Log("number of aliens " + numberOfAliens);
         if (numberOfAliens == 1)
         {
             WaveManager();
@@ -51,8 +53,8 @@ public class GameManager : MonoBehaviour
     //Wave Manager
     public void WaveManager()
     {
-        enemySpawnController.SpawnEnemies(enemyCount);
-        enemyCount += (enemyCount / 2);
+        enemySpawnController.SpawnEnemies(numEnemiesSpawn);
+        numEnemiesSpawn += (numEnemiesSpawn / 2);
         
     }
     
