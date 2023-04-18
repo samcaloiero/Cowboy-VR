@@ -8,10 +8,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/Assets/Obi Scripts/Cow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Obi Scripts/CowGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Obi Scripts/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/BulletHit.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> 638153e6c211e9a42aa6af990f96d8b96c1d577f
     <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sam's Scripts/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.0.4/Runtime/Locomotion/Continuous/ActionBasedContinuousMoveProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,9 +39,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Obi Bernstein\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Obi Bernstein\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Obi Bernstein\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\Sam.Caloiero\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Sam.Caloiero\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Sam.Caloiero\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -87,7 +95,19 @@
       <workItem from="1681250790789" duration="77000" />
       <workItem from="1681262836309" duration="662000" />
       <workItem from="1681264015674" duration="6000" />
+<<<<<<< HEAD
       <workItem from="1681697610413" duration="3597000" />
+=======
+      <workItem from="1681429926033" duration="95000" />
+      <workItem from="1681430318786" duration="314000" />
+      <workItem from="1681430658961" duration="892000" />
+      <workItem from="1681606343695" duration="85000" />
+      <workItem from="1681606494843" duration="172000" />
+      <workItem from="1681656324748" duration="36000" />
+      <workItem from="1681656371495" duration="6294000" />
+      <workItem from="1681703420832" duration="66000" />
+      <workItem from="1681763250471" duration="3007000" />
+>>>>>>> 638153e6c211e9a42aa6af990f96d8b96c1d577f
     </task>
     <servers />
   </component>
