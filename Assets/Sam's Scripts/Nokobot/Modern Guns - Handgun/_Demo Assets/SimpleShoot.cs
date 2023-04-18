@@ -9,6 +9,7 @@ public class SimpleShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
+    public AudioSource audioSource;
 
     [Header("Location Refrences")]
     [SerializeField] private Animator gunAnimator;
@@ -28,11 +29,14 @@ public class SimpleShoot : MonoBehaviour
 
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PullTheTrigger()
     {
         gunAnimator.SetTrigger("Fire");
+        audioSource.Play();
     }
 
 
