@@ -7,9 +7,16 @@ using UnityEngine.Serialization;
 public class GameManager : MonoBehaviour
 {
     public GameState gameState;
+    //number of rounds
+    public int numOfRounds;
+    [SerializeField] private int waveRound;
     public EnemySpawnController enemySpawner;
+    //Count of amount of aliens in scene
     public int numberOfAliens;
+    public AudioSource newWaveSound;
+    
     public EnemySpawnController enemySpawnController;
+    //number of enemies to spawn at beginning
     [FormerlySerializedAs("enemyCount")] public int numEnemiesSpawn;
 
     [SerializeField] private int numberOfCows;
@@ -31,10 +38,20 @@ public class GameManager : MonoBehaviour
         numberOfAliens = aliens.Length;
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
         numberOfCows = cows.Length;
-        Debug.Log("number of aliens " + numberOfAliens);
         if (numberOfAliens == 1)
         {
+            waveRound += 1;
             WaveManager();
+        }
+
+        // if (waveRound == numOfRounds)
+        // {
+        //     WavesComplete();
+        // }
+
+        if (numberOfCows ==0)
+        {
+            AllCowsKilled();
         }
     }
     //How can I use this function so I can check my gamestate in update?
@@ -43,10 +60,11 @@ public class GameManager : MonoBehaviour
     //     return gameState;
     // }
 
-    public void AliensKilled()
+    public void WavesComplete()
     {
-        
         gameState = GameState.Victory;
+        numEnemiesSpawn = 0;
+        //Script to teleport you to victory
 
     }
     //why cant I call my public int "numberOfAliens" here??
@@ -55,11 +73,13 @@ public class GameManager : MonoBehaviour
     {
         enemySpawnController.SpawnEnemies(numEnemiesSpawn);
         numEnemiesSpawn += (numEnemiesSpawn / 2);
-        
+        newWaveSound.Play();
+
     }
     
     public void AllCowsKilled()
     {
           gameState = GameState.GameOver;
+          //script to teleport u to L screen
     }
 }
