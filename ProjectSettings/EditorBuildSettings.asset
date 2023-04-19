@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FINAL MAP.unity
     guid: 7bfa438b7880fe64896bcbaf5ea441df
   - enabled: 0
@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/OBI.unity
     guid: c96fdbd38edf3f34d9097e7b03a34b4f
+  - enabled: 1
+    path: Assets/Scenes/AudioTests.unity
+    guid: 1c21bbcbff51e494c892382939c3022b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f1c6a84fea291814c90d39eb790da117,
       type: 2}

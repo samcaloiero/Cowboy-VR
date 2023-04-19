@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Enemy
   - Alien
+  - Ground
   layers:
   - Default
   - TransparentFX
