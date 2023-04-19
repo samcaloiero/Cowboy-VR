@@ -9,7 +9,7 @@ public class SimpleShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
-    public AudioSource audioSource;
+    private AudioSource audioSource;
 
     [Header("Location Refrences")]
     [SerializeField] private Animator gunAnimator;

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4827552039548658727
+--- !u!1 &5854957385257458060
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2042533761048106313}
-  - component: {fileID: 4203850930628113134}
-  - component: {fileID: 1320303367014940749}
-  - component: {fileID: 724758743599373928}
-  - component: {fileID: 674482072929199464}
-  - component: {fileID: 6908680342368621277}
-  - component: {fileID: 5146407104228357449}
-  - component: {fileID: -778137631639193769}
+  - component: {fileID: 6488328152734122806}
+  - component: {fileID: 7900711781078486163}
+  - component: {fileID: 5350277219094476889}
+  - component: {fileID: 6737830797729801434}
+  - component: {fileID: 6737830797729801435}
+  - component: {fileID: 6228385896833065420}
   m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Enemy
+  m_Name: martian audio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2042533761048106313
+--- !u!4 &6488328152734122806
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2088943, y: -5.21, z: -9.767947}
-  m_LocalScale: {x: 0.5, y: 2, z: 0.5}
+  m_GameObject: {fileID: 5854957385257458060}
+  m_LocalRotation: {x: 0.025092324, y: 0.025092268, z: -0.7066618, w: -0.7066611}
+  m_LocalPosition: {x: -219.19, y: 4.182117, z: 27.73}
+  m_LocalScale: {x: 15.356785, y: 42.730965, z: 38.39211}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4203850930628113134
+  m_LocalEulerAnglesHint: {x: 0, y: -4.067, z: 90}
+--- !u!33 &7900711781078486163
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1320303367014940749
+  m_GameObject: {fileID: 5854957385257458060}
+  m_Mesh: {fileID: 4579454407841743219, guid: e4072c675e5bd4b4c89c3848cb9aded9, type: 3}
+--- !u!23 &5350277219094476889
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
+  m_GameObject: {fileID: 5854957385257458060}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +64,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 777e75883967fba4cab8529e1db35ab2, type: 2}
+  - {fileID: 2100000, guid: fe9d3bea0b582e043ae43b4f1ac98d33, type: 2}
+  - {fileID: 2100000, guid: 979f740fdb366584dac475375a0ffcb4, type: 2}
+  - {fileID: -2249960132812961191, guid: e4072c675e5bd4b4c89c3848cb9aded9, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,81 +88,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &724758743599373928
-BoxCollider:
+--- !u!64 &6737830797729801434
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
+  m_GameObject: {fileID: 5854957385257458060}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &674482072929199464
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &6908680342368621277
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4579454407841743219, guid: e4072c675e5bd4b4c89c3848cb9aded9, type: 3}
+--- !u!114 &6737830797729801435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
+  m_GameObject: {fileID: 5854957385257458060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47182368762ccc64491c6ebec63c9566, type: 3}
+  m_Script: {fileID: 11500000, guid: b570e6e0882ec0648966d6d20c2591c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  cowPrefab: {fileID: 6642693157034769510, guid: af32dddb047acd447810cb3b9ad98001,
-    type: 3}
-  player: {fileID: 6763718125959483807, guid: 4f11f25ba5017aa44951a522ae32bc93, type: 3}
-  attackDistance: 100
-  attackInterval: 2
-  damage: 10
-  bloodSplatter: {fileID: 315319170275948959, guid: 8a8cc5ff7acbe1d46ba7aabf93468bb4,
-    type: 3}
---- !u!114 &5146407104228357449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb7747953ccf5a4bb8fc2f934c1a4da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &-778137631639193769
+  _startScreenManager: {fileID: 0}
+--- !u!82 &6228385896833065420
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
+  m_GameObject: {fileID: 5854957385257458060}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4457a2206362a224c861eedd2f3444fc, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.556
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -173,7 +138,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -206,7 +171,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

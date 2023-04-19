@@ -7,9 +7,11 @@ public class BulletHit : MonoBehaviour
 {
     private Collider collider;
     public StartScreenManager _startScreenManager;
+    private AudioSource audioSource;
     private void Awake()
     {
         collider = GetComponent<Collider>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -18,6 +20,8 @@ public class BulletHit : MonoBehaviour
         {
             Destroy(gameObject);
             _startScreenManager.numberOfAliens -= 1;
+            audioSource.Play();
+            
         }
     }
 }
