@@ -9,7 +9,6 @@ public class EnemyAttack : MonoBehaviour
     public GameObject player;
     public float attackDistance = 1f;
     public float attackInterval = 2f;
-    public float damage = 10f;
     public GameObject bloodSplatter;
 
     private float lastAttackTime;
@@ -68,7 +67,7 @@ public class EnemyAttack : MonoBehaviour
         }
         else
         {
-            return nearestCow;
+            return cowPrefab;
         }
     }
 

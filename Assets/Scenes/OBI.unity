@@ -854,6 +854,8 @@ GameObject:
   - component: {fileID: 232883146}
   - component: {fileID: 232883145}
   - component: {fileID: 232883144}
+  - component: {fileID: 232883148}
+  - component: {fileID: 232883147}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Player
@@ -900,7 +902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232883143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.709, z: 0}
+  m_LocalPosition: {x: 10, y: 3.709, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -910,6 +912,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &232883147
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232883143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &232883148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232883143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b747592e4b323b048a8ee7cc1a64017d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_XROrigin: {fileID: 232883145}
+  m_MinHeight: 0
+  m_MaxHeight: 200
+  m_Collider: {fileID: 232883147}
 --- !u!1 &422195175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.86690354
+      value: 11.32
       objectReference: {fileID: 0}
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
@@ -1249,7 +1281,7 @@ PrefabInstance:
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.112
+      value: 10.95
       objectReference: {fileID: 0}
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
@@ -1666,7 +1698,6 @@ GameObject:
   - component: {fileID: 1404371927}
   - component: {fileID: 1404371926}
   - component: {fileID: 1404371925}
-  - component: {fileID: 1404371924}
   - component: {fileID: 1404371923}
   - component: {fileID: 1404371929}
   - component: {fileID: 1404371930}
@@ -1697,20 +1728,6 @@ MonoBehaviour:
   cowCatchHeight: 30
   enemyCatchDistance: 500
   enemyCatchSpeed: 20
---- !u!114 &1404371924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404371922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 983662bbcf6ebe74dbcb6f0523cdd7b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiltAngle: 10
-  tiltSpeed: 5
 --- !u!64 &1404371925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1876,6 +1893,116 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1910678326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781844836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781844835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06314cadd790931499ad3040fa6975fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 0}
+  triggerDistance: 0.2
+--- !u!82 &1781844837
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781844835}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1873560142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,7 +2111,7 @@ PrefabInstance:
     - target: {fileID: -1595172528820048606, guid: af32dddb047acd447810cb3b9ad98001,
         type: 3}
       propertyPath: detectionRange
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6642693157034769499, guid: af32dddb047acd447810cb3b9ad98001,
         type: 3}
@@ -2739,12 +2866,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637bc964018adc04bbe210f79aac344d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numCows: 150
   cowPrefab: {fileID: 6642693157034769510, guid: af32dddb047acd447810cb3b9ad98001,
     type: 3}
+  numCows: 150
   ground: {fileID: 1873560142}
-  minY: 1
-  maxY: 5
 --- !u!1 &2097477393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +3057,6 @@ MonoBehaviour:
   player: {fileID: 232883143}
   attackDistance: 100
   attackInterval: 2
-  damage: 10
   bloodSplatter: {fileID: 315319170275948959, guid: 8a8cc5ff7acbe1d46ba7aabf93468bb4,
     type: 3}
 --- !u!1 &6228542584510532757

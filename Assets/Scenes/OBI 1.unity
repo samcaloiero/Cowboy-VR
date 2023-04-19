@@ -680,168 +680,295 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
+<<<<<<< Updated upstream
   m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
+=======
+  m_ModelPrefab: {fileID: 422195176}
+  m_ModelParent: {fileID: 229578263}
+>>>>>>> Stashed changes
   m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_PositionAction:
+<<<<<<< Updated upstream
     m_UseReference: 1
+=======
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Position
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 26d2aaa4-6518-4d33-8fae-419043a723d4
+=======
+      m_Id: f645ae2e-63e7-4017-ae8f-d45f2934e48c
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -2024308242397127297, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RotationAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_RotationAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Rotation
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: d7a15530-737b-416a-9d5d-a8b51ba6c682
+=======
+      m_Id: 1f4e7d21-72ea-41c4-93a1-a08e3047e96f
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 8248158260566104461, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_TrackingStateAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_TrackingStateAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: e12d3305-8866-42f0-a9b8-2cd7f4310c31
+=======
+      m_Id: 6a1e3c13-b182-4ee4-ba1a-69b8d4b43be2
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 684395432459739428, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_SelectAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Select
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 05483079-4b7c-4369-9176-fb8514428e98
+=======
+      m_Id: b0b21f9d-c0e8-41ea-a1f8-90f9e31e847f
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_SelectActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 8e42f062-fb45-44df-9825-35e1dfc18834
+=======
+      m_Id: cb0eaf94-2029-4727-aa69-341e0b6214da
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ActivateAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_ActivateAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Activate
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 38e5c09b-96d2-40e4-ae8e-3bfb9eb16727
+=======
+      m_Id: ce830998-1d35-48fa-82a8-e3093463956c
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ActivateActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_ActivateActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: ff2b1032-d7ae-4e1a-8e8a-a5556d5f8db5
+=======
+      m_Id: a037f919-eccb-414e-b643-f626b4af7d62
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_UIPressAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_UIPressAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: UI Press
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 347fe4ac-83bc-44f7-a0d2-2793a5775161
+=======
+      m_Id: ca31b0c7-e3c6-461a-b045-d9c832089c17
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_UIPressActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_UIPressActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 8b29ebc3-3830-4622-8c66-56f3a9b98d73
+=======
+      m_Id: aba01e1e-624a-4f29-a8ee-427341f95ba7
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 71106601250685021, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_HapticDeviceAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_HapticDeviceAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Haptic Device
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 35cfed17-bcaf-4ff9-9fe0-fa1727b7619b
+=======
+      m_Id: b906bb50-f303-4685-8d5c-eb381aed9f7f
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -8785819595477538065, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RotateAnchorAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_RotateAnchorAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Rotate Anchor
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 4fcd4b62-1769-4cc4-aaee-aea2fc40d24f
+=======
+      m_Id: 92431d1f-a968-476c-bf35-5ca33b2052a0
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -7363382999065477798, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_TranslateAnchorAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_TranslateAnchorAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Translate Anchor
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 7bfe4461-8d15-4a61-9fa6-28ce950c9996
+=======
+      m_Id: 15adf9c9-6110-4baf-9a3d-dcda2efb4eb1
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+=======
+    m_Reference: {fileID: 0}
+>>>>>>> Stashed changes
   m_ButtonPressPoint: 0.5
 --- !u!1 &232883143
 GameObject:
@@ -854,6 +981,11 @@ GameObject:
   - component: {fileID: 232883146}
   - component: {fileID: 232883145}
   - component: {fileID: 232883144}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 232883148}
+  - component: {fileID: 232883147}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Player
@@ -900,7 +1032,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232883143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 3.709, z: 0}
+=======
+  m_LocalPosition: {x: 10, y: 3.709, z: 10}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -910,6 +1046,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &248806990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -988,6 +1125,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+--- !u!136 &232883147
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232883143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &232883148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232883143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b747592e4b323b048a8ee7cc1a64017d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_XROrigin: {fileID: 232883145}
+  m_MinHeight: 0
+  m_MaxHeight: 200
+  m_Collider: {fileID: 232883147}
+>>>>>>> Stashed changes
 --- !u!1 &422195175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,11 +1336,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 919132149155446097, guid: df7c5f967b8655f4b91d76840a253243,
         type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 5129908771471584123, guid: df7c5f967b8655f4b91d76840a253243,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1179,6 +1351,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5bef3b81fa2432d4a812889047b95c61, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df7c5f967b8655f4b91d76840a253243, type: 3}
+<<<<<<< Updated upstream
 --- !u!1001 &490799284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1257,6 +1430,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &508819170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1548,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 34495857, guid: 20b1402e1f8c11c4e9a316a6ea825047, type: 3}
       propertyPath: shotPower
       value: 2000
@@ -1385,6 +1561,8 @@ PrefabInstance:
       propertyPath: destroyTimer
       value: 5
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 1653206439, guid: 20b1402e1f8c11c4e9a316a6ea825047, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -1412,7 +1590,11 @@ PrefabInstance:
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 0.86690354
+=======
+      value: 11.32
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
@@ -1422,7 +1604,11 @@ PrefabInstance:
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< Updated upstream
       value: -0.112
+=======
+      value: 10.95
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6885847140470107660, guid: 20b1402e1f8c11c4e9a316a6ea825047,
         type: 3}
@@ -1466,6 +1652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b1402e1f8c11c4e9a316a6ea825047, type: 3}
+<<<<<<< Updated upstream
 --- !u!1001 &663391390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1544,6 +1731,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &740309574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,7 +1764,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6228542584510532757}
   numEnemies: 10
+<<<<<<< Updated upstream
   spawnRadius: 1
+=======
+  spawnRadius: 10
+>>>>>>> Stashed changes
   spawnPoints:
   - {fileID: 2097477394}
   - {fileID: 906004636}
@@ -1588,7 +1781,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740309574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -32.6, y: 14, z: -6.2297235}
+=======
+  m_LocalPosition: {x: -17.527409, y: 6.694166, z: -6.2297235}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1622,7 +1819,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742717798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 26, y: 0, z: 33.8}
+=======
+  m_LocalPosition: {x: 334.9, y: -4.0341663, z: 75.529724}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1783,13 +1984,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906004635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 39.6, y: 0, z: -31}
+=======
+  m_LocalPosition: {x: 0, y: -4.0341663, z: 254.4}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 740309576}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &916276458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +2163,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1152862293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,6 +2280,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1161009417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,6 +2560,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1404371922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,10 +2573,17 @@ GameObject:
   - component: {fileID: 1404371928}
   - component: {fileID: 1404371927}
   - component: {fileID: 1404371926}
+<<<<<<< Updated upstream
   - component: {fileID: 1404371923}
   - component: {fileID: 1404371929}
   - component: {fileID: 1404371930}
   - component: {fileID: 1404371931}
+=======
+  - component: {fileID: 1404371925}
+  - component: {fileID: 1404371923}
+  - component: {fileID: 1404371929}
+  - component: {fileID: 1404371930}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -2393,6 +2611,23 @@ MonoBehaviour:
   cowCatchHeight: 30
   enemyCatchDistance: 500
   enemyCatchSpeed: 20
+<<<<<<< Updated upstream
+=======
+--- !u!64 &1404371925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404371922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> Stashed changes
 --- !u!23 &1404371926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2472,7 +2707,11 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
+<<<<<<< Updated upstream
   m_Constraints: 116
+=======
+  m_Constraints: 112
+>>>>>>> Stashed changes
   m_CollisionDetection: 0
 --- !u!114 &1404371930
 MonoBehaviour:
@@ -2486,6 +2725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0140fd1ada45db94cb236b8df7cc353d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   yPositionFrozen: 1
   bulletCollisionCount: 0
   maxBulletCollisions: 5
@@ -2504,13 +2744,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000002, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
+=======
+  recoilForce: 5
+  bulletCollisionCount: 0
+  maxBulletCollisions: 5
+  movementSpeed: 10
+  targetHeight: 100
+>>>>>>> Stashed changes
 --- !u!1 &1781844835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6642693157034769510, guid: af32dddb047acd447810cb3b9ad98001,
     type: 3}
   m_PrefabInstance: {fileID: 1910678326}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!114 &1781844843
+=======
+--- !u!114 &1781844836
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2519,6 +2770,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781844835}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 4d4229a7cd9f8aa488b68e095b01afb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2603,6 +2855,109 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 06314cadd790931499ad3040fa6975fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 0}
+  triggerDistance: 0.2
+--- !u!82 &1781844837
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781844835}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+>>>>>>> Stashed changes
 --- !u!1 &1873560142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,7 +3050,11 @@ Transform:
   m_GameObject: {fileID: 1873560142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 10, y: 10, z: 10}
+=======
+  m_LocalScale: {x: 100, y: 100, z: 100}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2708,6 +3067,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 0}
       propertyPath: cowHealthBar
       value: 
@@ -2716,6 +3076,12 @@ PrefabInstance:
         type: 3}
       propertyPath: detectionRange
       value: 200
+=======
+    - target: {fileID: -1595172528820048606, guid: af32dddb047acd447810cb3b9ad98001,
+        type: 3}
+      propertyPath: detectionRange
+      value: 100
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6642693157034769499, guid: af32dddb047acd447810cb3b9ad98001,
         type: 3}
@@ -3228,168 +3594,295 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
+<<<<<<< Updated upstream
   m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
+=======
+  m_ModelPrefab: {fileID: 508819172}
+  m_ModelParent: {fileID: 1988047001}
+>>>>>>> Stashed changes
   m_Model: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_PositionAction:
+<<<<<<< Updated upstream
     m_UseReference: 1
+=======
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Position
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 93ead265-4bff-4199-8ddf-33c028dcfee9
+=======
+      m_Id: c8176297-caca-44b8-8be7-bc1ea0c05b5c
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -3326005586356538449, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RotationAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_RotationAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Rotation
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: cd9a8368-32d3-4e58-86a0-6fe78d199369
+=======
+      m_Id: d544c50a-53c2-4a2e-9c60-759d8d3e48d3
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 5101698808175986029, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_TrackingStateAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_TrackingStateAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 7964ebc4-45e1-4431-a17a-7f2206e38661
+=======
+      m_Id: 47fc7a4a-046b-4ad9-bda9-4ec06e9d3798
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -1277054153949319361, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_SelectAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Select
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 3207346a-8b2f-4b24-b45a-90ea1cdef7fb
+=======
+      m_Id: f7b3bd76-1846-4987-b651-c316ff090449
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_SelectActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: dcf177a1-4c6d-42a7-b095-5f68848dadf1
+=======
+      m_Id: 275a9de8-e1af-43fa-a15d-b3d84409e770
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ActivateAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_ActivateAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Activate
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: ed3be3cd-637e-48d6-ae4b-dd97305eaa40
+=======
+      m_Id: 339ecf20-bc91-4390-9371-806e33e42cd0
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ActivateActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_ActivateActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: af4d694a-0159-4acb-bf36-7b78c35a10d5
+=======
+      m_Id: 78f74cdb-9311-4d00-88e6-add774ea06c2
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_UIPressAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_UIPressAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: UI Press
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 55ce5c5d-aad8-4ebf-9f21-899ff595a062
+=======
+      m_Id: 42f1b9d2-1573-430f-90a1-6c268f17a46d
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 3279264004350380116, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_UIPressActionValue:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_UIPressActionValue:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: cdab09f7-ec37-4eee-b72c-06339cc37c8b
+=======
+      m_Id: b9dfca55-57be-43ee-a494-f605dc54db79
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -5908353012961274365, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_HapticDeviceAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_HapticDeviceAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Haptic Device
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 60f81e0e-3fab-4e26-90b6-a5ab762e2bb1
+=======
+      m_Id: 6b5afeaa-a873-4416-8f36-7b504e407ef1
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -8222252007134549311, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RotateAnchorAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_RotateAnchorAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Rotate Anchor
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: aca8fec0-a925-428d-a6b7-25cfbd478258
+=======
+      m_Id: 77da6209-f06d-43d6-b621-c6467519793e
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: -5913262927076077117, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_TranslateAnchorAction:
     m_UseReference: 1
+=======
+    m_Reference: {fileID: 0}
+  m_TranslateAnchorAction:
+    m_UseReference: 0
+>>>>>>> Stashed changes
     m_Action:
       m_Name: Translate Anchor
       m_Type: 0
       m_ExpectedControlType: 
+<<<<<<< Updated upstream
       m_Id: 161874b5-2545-4bb2-bea4-eeddeb4fabf6
+=======
+      m_Id: 46a2ed41-f2cd-499b-85d1-0a968bd6e0df
+>>>>>>> Stashed changes
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+<<<<<<< Updated upstream
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+=======
+    m_Reference: {fileID: 0}
+>>>>>>> Stashed changes
   m_ButtonPressPoint: 0.5
 --- !u!1 &2035368969
 GameObject:
@@ -3470,11 +3963,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 637bc964018adc04bbe210f79aac344d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   numCows: 0
   cowPrefab: {fileID: 1781844835}
   ground: {fileID: 1873560142}
   minY: 1
   maxY: 5
+=======
+  cowPrefab: {fileID: 6642693157034769510, guid: af32dddb047acd447810cb3b9ad98001,
+    type: 3}
+  numCows: 150
+  ground: {fileID: 1873560142}
+>>>>>>> Stashed changes
 --- !u!1 &2097477393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,13 +3999,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097477393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: -186.2, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 740309576}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &2125795038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3584,6 +4089,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af32dddb047acd447810cb3b9ad98001, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &2136162112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,7 +4185,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6228542584510532757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 1.2088943, y: 10.5, z: -9.767947}
+=======
+  m_LocalPosition: {x: 1.2088943, y: -5.21, z: -9.767947}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 0.5, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3740,7 +4251,10 @@ MonoBehaviour:
   player: {fileID: 232883143}
   attackDistance: 100
   attackInterval: 2
+<<<<<<< Updated upstream
   damage: 10
+=======
+>>>>>>> Stashed changes
   bloodSplatter: {fileID: 315319170275948959, guid: 8a8cc5ff7acbe1d46ba7aabf93468bb4,
     type: 3}
 --- !u!1 &6228542584510532757

@@ -4,30 +4,19 @@ using UnityEngine;
 
 public class CowGenerator : MonoBehaviour
 {
-    public int numCows = 10;
     public GameObject cowPrefab;
+    public int numCows;
     public GameObject ground;
-    public float minY = 0f;
-    public float maxY = 5f;
 
     void Awake()
     {
-        Mesh groundMesh = ground.GetComponent<MeshFilter>().mesh;
-        Vector3[] vertices = groundMesh.vertices;
-
         for (int i = 0; i < numCows; i++)
         {
-            int randomIndex = Random.Range(0, vertices.Length);
-            Vector3 randomVertex = ground.transform.TransformPoint(vertices[randomIndex]);
-
-            float y = randomVertex.y;
-
-            y = Mathf.Clamp(y, minY, maxY);
-
-            Vector3 position = new Vector3(randomVertex.x, y, randomVertex.z);
-
             
-            Instantiate(cowPrefab, position, Quaternion.identity);
+            float x = Random.Range(-5.0f, 5.0f); // generate random x position
+            float z = Random.Range(-5.0f, 5.0f); // generate random z position
+            Vector3 position = new Vector3(x, 0.0f, z) + ground.transform.position; // add ground position offset
+            Instantiate(cowPrefab, position, Quaternion.identity); // spawn cow prefab at position
         }
     }
 }

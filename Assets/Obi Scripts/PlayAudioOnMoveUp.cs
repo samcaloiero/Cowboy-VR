@@ -2,25 +2,26 @@ using UnityEngine;
 
 public class PlayAudioOnMoveUp : MonoBehaviour
 {
-    public AudioClip clip;
-    private AudioSource source;
+    public AudioClip audioClip;
+    public float triggerDistance = 10f;
 
-    private bool wasMovingUp = false;
+    private AudioSource audioSource;
+    private float initialY;
 
-    private void Start()
+    void Start()
     {
-        source = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
+        initialY = transform.position.y;
     }
 
-    private void Update()
+    void Update()
     {
-        bool isMovingUp = transform.position.y > transform.position.y + 0.01f;
+        float currentY = transform.position.y;
+        float distanceTravelled = currentY - initialY;
 
-        if (isMovingUp && !wasMovingUp)
+        if (distanceTravelled >= triggerDistance && !audioSource.isPlaying)
         {
-            source.PlayOneShot(clip);
+            audioSource.PlayOneShot(audioClip);
         }
-
-        wasMovingUp = isMovingUp;
     }
 }
