@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text waveText;
+    [SerializeField] private TMP_Text cowCountText;
     private int waveCounterTMP;
     public GameState gameState;
     //number of rounds til win
@@ -38,6 +39,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        cowCountText.text = (numberOfCows +" Cows Left" );
+        
         //GetGameState();
         GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;

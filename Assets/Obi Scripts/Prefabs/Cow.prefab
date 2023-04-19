@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6642693157034769508}
   - component: {fileID: 6642693157034769511}
   - component: {fileID: -1595172528820048606}
-  - component: {fileID: -6238783755301095893}
+  - component: {fileID: 7494907177047660883}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Cow
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   detectionRange: 10
---- !u!114 &-6238783755301095893
+--- !u!114 &7494907177047660883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +139,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6642693157034769510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df4cd950dbba414482a906f217228fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d4229a7cd9f8aa488b68e095b01afb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
+  amplitude: 0.5
+  frequency: 1
