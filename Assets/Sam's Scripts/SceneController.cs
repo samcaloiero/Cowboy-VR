@@ -14,7 +14,7 @@ public class SceneController : MonoBehaviour
         //this works in editor
         // string path = AssetDatabase.GetAssetPath(gameScene);
         // SceneManager.LoadScene(path);
-        SceneManager.LoadScene("OBI SAM 4-16");
+        SceneManager.LoadScene("Scenes/OBI SAM F");
 
     }
 }

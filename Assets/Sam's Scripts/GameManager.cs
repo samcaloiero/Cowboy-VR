@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameState gameState;
-    //number of rounds
+    //number of rounds til win
     public int numOfRounds;
     [SerializeField] private int waveRound;
     public EnemySpawnController enemySpawner;
@@ -44,10 +45,10 @@ public class GameManager : MonoBehaviour
             WaveManager();
         }
 
-        // if (waveRound == numOfRounds)
-        // {
-        //     WavesComplete();
-        // }
+        if (waveRound == numOfRounds)
+        {
+            WavesComplete();
+        }
 
         if (numberOfCows ==0)
         {
@@ -63,7 +64,9 @@ public class GameManager : MonoBehaviour
     public void WavesComplete()
     {
         gameState = GameState.Victory;
-        numEnemiesSpawn = 0;
+        //numEnemiesSpawn = 0;
+        SceneManager.LoadScene("Win Scene");
+
         //Script to teleport you to victory
 
     }
@@ -81,5 +84,6 @@ public class GameManager : MonoBehaviour
     {
           gameState = GameState.GameOver;
           //script to teleport u to L screen
+          SceneManager.LoadScene("Lose Scene");
     }
 }

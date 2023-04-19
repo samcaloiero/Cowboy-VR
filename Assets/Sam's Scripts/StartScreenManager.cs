@@ -12,7 +12,7 @@ public class StartScreenManager : MonoBehaviour
 
     private void Awake()
     {
-        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;
         Debug.Log("There are " + numberOfAliens + " aliens in the scene.");
     }

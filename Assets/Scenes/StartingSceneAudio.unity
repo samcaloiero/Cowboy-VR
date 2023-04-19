@@ -204,6 +204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Martian
       objectReference: {fileID: 0}
+    - target: {fileID: 5854957385257458060, guid: 1558b29d22ff7694f82576abfe86550b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6488328152734122806, guid: 1558b29d22ff7694f82576abfe86550b,
         type: 3}
       propertyPath: m_RootOrder
@@ -259,6 +264,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6737830797729801435, guid: 1558b29d22ff7694f82576abfe86550b,
+        type: 3}
+      propertyPath: _startScreenManager
+      value: 
+      objectReference: {fileID: 1263763214}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1558b29d22ff7694f82576abfe86550b, type: 3}
 --- !u!1001 &208997970

@@ -237,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740309574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.527409, y: 6.694166, z: -6.2297235}
+  m_LocalPosition: {x: -17.527409, y: 13.77, z: -6.2297235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -619,6 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0140fd1ada45db94cb236b8df7cc353d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yPositionFrozen: 1
   bulletCollisionCount: 0
   maxBulletCollisions: 5
   targetHeight: 100
@@ -653,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 0
-  numOfRounds: 3
+  numOfRounds: 5
   waveRound: 0
   enemySpawner: {fileID: 740309575}
   numberOfAliens: 0
