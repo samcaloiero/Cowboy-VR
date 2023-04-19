@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private TMP_Text waveText;
+    private int waveCounterTMP;
     public GameState gameState;
     //number of rounds til win
     public int numOfRounds;
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        waveCounterTMP = numOfRounds;
         gameState = GameState.Gameplay;
         GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;
@@ -42,6 +46,8 @@ public class GameManager : MonoBehaviour
         if (numberOfAliens == 1)
         {
             waveRound += 1;
+            waveCounterTMP -= 1;
+            waveText.text = ("Wave :" + waveCounterTMP);
             WaveManager();
         }
 
