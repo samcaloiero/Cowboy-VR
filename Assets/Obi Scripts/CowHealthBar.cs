@@ -6,7 +6,7 @@ public class CowHealthBar : MonoBehaviour
     public float startingCows;  // The initial number of cows in the scene
     private float currentCows;  // The current number of cows alive
 
-    private Slider slider;  // Reference to the slider component
+    public Slider slider;  // Reference to the slider component
 
     private void Start()
     {
