@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UFOController : MonoBehaviour
 {
+    private Rigidbody _rb;
+    public bool yPositionFrozen = true; 
     public int bulletCollisionCount = 0;
     public int maxBulletCollisions = 5;
     public float targetHeight = 10f;
@@ -11,6 +13,17 @@ public class UFOController : MonoBehaviour
 
     private bool movingUp = true;  // Whether the object is currently moving up or not
 
+    private void Start()
+    {
+        // Get the Rigidbody component
+        _rb = GetComponent<Rigidbody>();
+
+        // Freeze the Y position
+        if (yPositionFrozen)
+        {
+            _rb.constraints = RigidbodyConstraints.FreezePositionY;
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -26,11 +39,16 @@ public class UFOController : MonoBehaviour
     {
         if (movingUp)
         {
+            _rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
             transform.Translate(Vector3.up * speed * Time.deltaTime); // Move the object upwards
             if (transform.position.y >= targetHeight)
             {
                 movingUp = false;
             }
+        }
+        else
+        {
+            _rb.constraints = RigidbodyConstraints.FreezePositionY;
         }
     }
 }

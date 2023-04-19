@@ -1,33 +1,37 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CowHealthBar : MonoBehaviour
 {
-    public CowCounter cowCounter;  // The cow counter script that tracks the number of cows in the scene
-    public float startingCows = 0;  // The initial number of cows in the scene
-    public Image healthBar;  // The UI health bar to update
+    public float startingCows;  // The initial number of cows in the scene
+    private float currentCows;  // The current number of cows alive
 
-    private float currentCowsAlive;  // The current number of cows alive in the scene
+    private Slider slider;  // Reference to the slider component
 
     private void Start()
     {
-        currentCowsAlive = startingCows;
-        UpdateHealthBar();
+        // Get the slider component
+        slider = GetComponent<Slider>();
+
+        // Set the starting number of cows
+        currentCows = startingCows;
+        UpdateSliderValue();
+    }
+
+    public void CowDied()
+    {
+        currentCows--;
+        UpdateSliderValue();
+    }
+
+    private void UpdateSliderValue()
+    {
+        // Update the slider value based on the current number of cows
+        slider.value = currentCows / startingCows;
     }
 
     private void Update()
     {
-        // Update the number of cows alive
-        currentCowsAlive = cowCounter.cowsAlive;
-
-        // Update the health bar based on the number of cows alive
-        UpdateHealthBar();
-    }
-
-    private void UpdateHealthBar()
-    {
-        float healthPercentage = currentCowsAlive / startingCows;
-        healthBar.fillAmount = healthPercentage;
+        UpdateSliderValue();
     }
 }
