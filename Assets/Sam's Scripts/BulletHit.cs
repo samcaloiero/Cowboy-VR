@@ -19,7 +19,7 @@ public class BulletHit : MonoBehaviour
         if( collision.gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject);
-            _startScreenManager.numberOfAliens -= 1;
+            //_startScreenManager.numberOfAliens -= 1;
             audioSource.Play();
             
         }

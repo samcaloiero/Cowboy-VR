@@ -19,7 +19,9 @@ public class StartScreenManager : MonoBehaviour
 
     private void Update()
     {
-        if (numberOfAliens == 0)
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
+        numberOfAliens = aliens.Length;
+        if (numberOfAliens <= 0)
         {
             sceneManager.GoToGameScene();
             
