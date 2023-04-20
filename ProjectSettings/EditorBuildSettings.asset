@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Finished Scenes/CompleteMapObi.unity
+    path: Assets/Scenes/Finished Scenes/START SCENE.unity
+    guid: 9465817124d8bcb44a436f64df292cb2
+  - enabled: 1
+    path: Assets/Scenes/CompleteMapObi.unity
     guid: dd99538301f88ab4ca24fe6e258e3cf7
   - enabled: 1
     path: Assets/Scenes/Finished Scenes/Lose Scene.unity
     guid: 381a6953339d86b458d1570236ec9ab6
+  - enabled: 1
+    path: Assets/Scenes/Win Scene.unity
+    guid: e2d0a4c8c4301084b9be7c8cb04c50fb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f1c6a84fea291814c90d39eb790da117,
       type: 2}
