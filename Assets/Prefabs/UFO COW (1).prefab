@@ -233,8 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  detectionRange: 10
-  roamRadius: 10
+  detectionRange: 25
+  roamRadius: 100
   roamSpeed: 2
 --- !u!65 &6337909615877966905
 BoxCollider:

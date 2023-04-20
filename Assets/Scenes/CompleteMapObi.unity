@@ -2711,7 +2711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c343239906ffe4240918d94327f0e3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7402202250778312772, guid: 5d0682d92cf4f4949b839bf192f7faf9,
+  enemyPrefab: {fileID: 8313814425655749519, guid: e72760ba4e7313744bf5ddbd3dbf425c,
     type: 3}
   numEnemies: 50
   spawnRadius: 10
@@ -5569,7 +5569,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6763718126345939188}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 897394c9fb147814cab70f6282e84633, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

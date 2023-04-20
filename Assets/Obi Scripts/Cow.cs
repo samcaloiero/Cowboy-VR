@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cow : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float detectionRange = 10f;
+    public float detectionRange = 25f;
     public float roamRadius = 10f;
     public float roamSpeed = 2f;
 
