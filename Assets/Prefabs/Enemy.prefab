@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1320303367014940749}
   - component: {fileID: 724758743599373928}
   - component: {fileID: 674482072929199464}
-  - component: {fileID: 6908680342368621277}
   - component: {fileID: 5146407104228357449}
   - component: {fileID: -778137631639193769}
+  - component: {fileID: 7311139990907480960}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -117,26 +117,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &6908680342368621277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4827552039548658727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47182368762ccc64491c6ebec63c9566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  cowPrefab: {fileID: 7619421742870409938, guid: cd291bb25c62979429b12a9bafc994c6,
-    type: 3}
-  player: {fileID: 6763718125959483807, guid: 4f11f25ba5017aa44951a522ae32bc93, type: 3}
-  attackDistance: 100
-  attackInterval: 2
-  bloodSplatter: {fileID: 315319170275948959, guid: 8a8cc5ff7acbe1d46ba7aabf93468bb4,
-    type: 3}
 --- !u!114 &5146407104228357449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +225,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7311139990907480960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4827552039548658727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832847c02bb6e094fb4fc0b963c68120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  rotationSpeed: 3
+  cowObjects: []
+  playerObjects:
+  - {fileID: 6763718125959483807, guid: 4f11f25ba5017aa44951a522ae32bc93, type: 3}
+  collisionSound: {fileID: 0}
