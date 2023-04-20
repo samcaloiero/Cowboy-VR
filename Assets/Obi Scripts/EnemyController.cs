@@ -1,93 +1,101 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public float moveSpeed = 3.0f;
-    public float rotationSpeed = 3.0f;
-    public List<GameObject> cowObjects;
-    public List<GameObject> playerObjects;
-    public AudioClip collisionSound;
+    public float speed = 5f;
+    public float attackRange = 2f;
+    public AudioClip attackSound;
+    public string targetTag = "Cow";
+    
 
     private Transform target;
+    private List<Transform> targets = new List<Transform>();
+    private AudioSource audioSource;
 
     void Start()
     {
-        // Find all game objects with the "Cow" tag and add them to the cowObjects list
-        GameObject[] cowGOs = GameObject.FindGameObjectsWithTag("Cow");
-        foreach (GameObject cowGO in cowGOs)
+        audioSource = GetComponent<AudioSource>();
+        FindTargets();
+        FindNextTarget();
+    }
+
+    void FindTargets()
+    {
+        GameObject[] targetObjects = GameObject.FindGameObjectsWithTag(targetTag);
+        foreach (GameObject targetObject in targetObjects)
         {
-            cowObjects.Add(cowGO);
+            targets.Add(targetObject.transform);
+        }
+    }
+
+    void FindNextTarget()
+    {
+        float minDistance = Mathf.Infinity;
+        Transform nearestTarget = null;
+
+        foreach (Transform potentialTarget in targets)
+        {
+            float distanceToTarget = Vector3.Distance(transform.position, potentialTarget.position);
+            if (distanceToTarget < minDistance)
+            {
+                minDistance = distanceToTarget;
+                nearestTarget = potentialTarget;
+            }
         }
 
-        // Find all game objects with the "Player" tag and add them to the playerObjects list
-        GameObject[] playerGOs = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject playerGO in playerGOs)
-        {
-            playerObjects.Add(playerGO);
-        }
+        target = nearestTarget;
     }
 
     void Update()
     {
-        GameObject targetObject = GetNearestObject();
-
-        if (targetObject != null)
+        if (target == null)
         {
-            target = targetObject.transform;
+            FindNextTarget();
+            return;
+        }
 
-            // Move towards the target
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-
-            // Rotate towards the target
-            Vector3 direction = (target.position - transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        if (distanceToTarget <= attackRange)
+        {
+            Attack();
+        }
+        else
+        {
+            MoveToTarget();
         }
     }
 
-    GameObject GetNearestObject()
+    void MoveToTarget()
     {
-        GameObject nearestObject = null;
-        float nearestDistance = Mathf.Infinity;
-
-        foreach (GameObject cowObject in cowObjects)
+        if (target != null)
         {
-            float distance = Vector3.Distance(transform.position, cowObject.transform.position);
-            if (distance < nearestDistance)
-            {
-                nearestDistance = distance;
-                nearestObject = cowObject;
-            }
+            transform.LookAt(target);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
-
-        foreach (GameObject playerObject in playerObjects)
-        {
-            float distance = Vector3.Distance(transform.position, playerObject.transform.position);
-            if (distance < nearestDistance)
-            {
-                nearestDistance = distance;
-                nearestObject = playerObject;
-            }
-        }
-
-        return nearestObject;
     }
 
-    void OnCollisionEnter(Collision other)
+    void Attack()
     {
-        if (other.gameObject.CompareTag("Cow"))
+        if (target.CompareTag("Player"))
         {
-            // Destroy the cow game object on collision
-            Destroy(other.gameObject);
-
-            // Play collision sound
-            AudioSource.PlayClipAtPoint(collisionSound, transform.position);
+            audioSource.PlayOneShot(attackSound);
         }
-        else if (other.gameObject.CompareTag("Player"))
+        else if (target.CompareTag(targetTag))
         {
-            // Play collision sound
-            AudioSource.PlayClipAtPoint(collisionSound, transform.position);
+            Destroy(target.gameObject);
+        }
+
+        targets.Remove(target);
+        FindNextTarget();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            audioSource.PlayOneShot(attackSound);
         }
     }
 }
