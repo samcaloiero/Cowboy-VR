@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public int numberOfAliens;
     public AudioSource newWaveSound;
     private int startNumberOfCows;
+    public Material startSkyBox;
     
     
     public EnemySpawnController enemySpawnController;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        SkyboxChange(startSkyBox);
         waveCounterTMP = numOfRounds;
         gameState = GameState.Gameplay;
         GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
@@ -66,6 +68,7 @@ public class GameManager : MonoBehaviour
         numberOfAliens = aliens.Length;
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
         numberOfCows = cows.Length;
+        //Increase wave amount if we have one alien left
         if (numberOfAliens == 1)
         {
             waveRound += 1;
@@ -73,13 +76,13 @@ public class GameManager : MonoBehaviour
             waveText.text = ("Wave :" + waveCounterTMP);
             WaveManager();
         }
-
+        //if wave countdown complete, go to win screen
         if (waveRound == numOfRounds)
         {
             WavesComplete();
         }
-
-        if (numberOfCows ==0)
+        //lose if our cows = 0
+        if (numberOfCows ==1)
         {
             AllCowsKilled();
         }

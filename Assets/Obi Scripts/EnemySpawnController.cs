@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawnController : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    public int numEnemies = 10;
+    //public int numEnemies = 10;
    // private int enemyCount;
     public float spawnRadius = 10f;
     public List<Transform> spawnPoints;
