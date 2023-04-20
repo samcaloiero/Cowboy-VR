@@ -15,7 +15,7 @@ public class SceneController : MonoBehaviour
         //this works in editor
         // string path = AssetDatabase.GetAssetPath(gameScene);
         // SceneManager.LoadScene(path);
-            SceneManager.LoadScene("Scenes/Finished Scenes/CHASE");
+            SceneManager.LoadScene("Scenes/Finished Scenes/CompletedMapObi");
 
     }
 }

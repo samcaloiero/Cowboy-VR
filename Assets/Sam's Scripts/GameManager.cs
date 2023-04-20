@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     private int waveCounterTMP;
     public GameState gameState;
 
+    //change this for when the first skybox change happens
     public Material firstSkyboxChange;
+    //change this for when the second skybox change happens
     public Material secondSkyboxChange;
     //number of rounds til win
     public int numOfRounds;
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     public AudioSource newWaveSound;
     private int startNumberOfCows;
     public Material startSkyBox;
+    public int firstSkyChange;
+    public int secondSkyChange;
     
     
     public EnemySpawnController enemySpawnController;
@@ -51,16 +55,6 @@ public class GameManager : MonoBehaviour
         // {
         //     SkyboxChange(skyboxChange);
         // }
-        if (numberOfCows <= startNumberOfCows / 2)
-        {
-            SkyboxChange(firstSkyboxChange);
-        }
-
-        if (numberOfCows <= startNumberOfCows / 4)
-        {
-            SkyboxChange(secondSkyboxChange);
-        }
-            
         cowCountText.text = (numberOfCows +" Cows Left" );
         
         //GetGameState();
@@ -85,6 +79,14 @@ public class GameManager : MonoBehaviour
         if (numberOfCows ==1)
         {
             AllCowsKilled();
+        }
+        if (numberOfCows <= secondSkyChange)
+        {
+            SkyboxChange(secondSkyboxChange);
+        }
+        else if (numberOfCows <= firstSkyChange)
+        {
+            SkyboxChange(firstSkyboxChange);
         }
     }
     //How can I use this function so I can check my gamestate in update?
