@@ -8,6 +8,7 @@ public class EnemyUFOCatcher : MonoBehaviour
     public float cowCatchHeight = 5f;
     public float enemyCatchDistance = 20f;
     public float enemyCatchSpeed = 10f;
+    public GameObject cone;
 
     private GameObject targetCow;
     private Vector3 cowCatchOffset;
@@ -17,6 +18,7 @@ public class EnemyUFOCatcher : MonoBehaviour
     {
         targetCow = null;
         cowCatchOffset = Vector3.up * cowCatchHeight;
+        cone.SetActive(false);
     }
 
     void Update()
@@ -57,6 +59,7 @@ public class EnemyUFOCatcher : MonoBehaviour
         else
         {
             // Pull cow into enemy
+            cone.SetActive(!cone.activeSelf);
             Vector3 cowPosition = targetCow.transform.position + cowCatchOffset;
             targetCow.transform.position = Vector3.MoveTowards(targetCow.transform.position, cowPosition, cowPullSpeed * Time.deltaTime);
 
@@ -66,6 +69,7 @@ public class EnemyUFOCatcher : MonoBehaviour
                 Destroy(targetCow);
                 transform.Translate(transform.up * 50f * Time.deltaTime);
                 isCatching = false;
+                cone.SetActive(false);
             }
         }
     }
