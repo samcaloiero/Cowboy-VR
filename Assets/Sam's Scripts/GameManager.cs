@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text cowCountText;
     private int waveCounterTMP;
     public GameState gameState;
+
+    public Material firstSkyboxChange;
+    public Material secondSkyboxChange;
     //number of rounds til win
     public int numOfRounds;
     [SerializeField] private int waveRound;
@@ -19,6 +22,8 @@ public class GameManager : MonoBehaviour
     //Count of amount of aliens in scene
     public int numberOfAliens;
     public AudioSource newWaveSound;
+    private int startNumberOfCows;
+    
     
     public EnemySpawnController enemySpawnController;
     //number of enemies to spawn at beginning
@@ -33,12 +38,27 @@ public class GameManager : MonoBehaviour
         GameObject[] aliens = GameObject.FindGameObjectsWithTag("Enemy");
         numberOfAliens = aliens.Length;
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
-        numberOfCows = cows.Length;
-       
+        startNumberOfCows = cows.Length;
+        Debug.Log("starting cows " +startNumberOfCows);
     }
 
     private void Update()
     {
+        Debug.Log("current cows" + numberOfCows);
+        // if (sceneTestChange == 1)
+        // {
+        //     SkyboxChange(skyboxChange);
+        // }
+        if (numberOfCows <= startNumberOfCows / 2)
+        {
+            SkyboxChange(firstSkyboxChange);
+        }
+
+        if (numberOfCows <= startNumberOfCows / 4)
+        {
+            SkyboxChange(secondSkyboxChange);
+        }
+            
         cowCountText.text = (numberOfCows +" Cows Left" );
         
         //GetGameState();
@@ -88,7 +108,11 @@ public class GameManager : MonoBehaviour
         newWaveSound.Play();
 
     }
-    
+
+    public void SkyboxChange(Material skybox)
+    {
+        RenderSettings.skybox = skybox;
+    }
     public void AllCowsKilled()
     {
           gameState = GameState.GameOver;
