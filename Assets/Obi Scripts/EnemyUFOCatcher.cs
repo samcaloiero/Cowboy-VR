@@ -48,7 +48,7 @@ public class EnemyUFOCatcher : MonoBehaviour
 
                 transform.position = Vector3.MoveTowards(transform.position, enemyCatchPosition, enemyCatchSpeed * Time.deltaTime);
 
-                if (Vector3.Distance(transform.position, enemyCatchPosition) < 0.1f)
+                if (Vector3.Distance(transform.position, enemyCatchPosition) < 2f)
                 {
                     isCatching = true;
                 }
@@ -61,7 +61,7 @@ public class EnemyUFOCatcher : MonoBehaviour
             targetCow.transform.position = Vector3.MoveTowards(targetCow.transform.position, cowPosition, cowPullSpeed * Time.deltaTime);
 
             // If cow touches enemy, destroy cow and fly away
-            if (Vector3.Distance(targetCow.transform.position, transform.position) < 2f)
+            if (Vector3.Distance(targetCow.transform.position, transform.position) < 6f)
             {
                 Destroy(targetCow);
                 transform.Translate(transform.up * 50f * Time.deltaTime);

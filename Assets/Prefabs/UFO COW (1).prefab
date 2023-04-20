@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c96e178e99f0ab41a1ce0cbc468ee2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3
   detectionRange: 10
   roamRadius: 10
   roamSpeed: 2
