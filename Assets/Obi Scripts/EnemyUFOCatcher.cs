@@ -24,7 +24,7 @@ public class EnemyUFOCatcher : MonoBehaviour
         if (!isCatching)
         {
             // Find a random cow within range
-            Collider[] colliders = Physics.OverlapSphere(transform.position, enemyCatchDistance);
+            Collider[] colliders = Physics.OverlapBox(transform.position, Vector3.one * cowCatchRadius);
             foreach (Collider collider in colliders)
             {
                 if (collider.CompareTag("Cow"))
@@ -61,7 +61,7 @@ public class EnemyUFOCatcher : MonoBehaviour
             targetCow.transform.position = Vector3.MoveTowards(targetCow.transform.position, cowPosition, cowPullSpeed * Time.deltaTime);
 
             // If cow touches enemy, destroy cow and fly away
-            if (Vector3.Distance(targetCow.transform.position, transform.position) < 1f)
+            if (Vector3.Distance(targetCow.transform.position, transform.position) < 2f)
             {
                 Destroy(targetCow);
                 transform.Translate(transform.up * 50f * Time.deltaTime);

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CowMovement : MonoBehaviour
 {
-    public float speed = 1f; // speed of movement
+    public float speed = 3f; // speed of movement
     public float amplitude = 0.5f; // amount of vertical movement
     public float frequency = 1f; // frequency of vertical movement
 

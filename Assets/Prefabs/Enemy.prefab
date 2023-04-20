@@ -115,7 +115,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &6908680342368621277
 MonoBehaviour:
@@ -130,12 +130,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  cowPrefab: {fileID: 6642693157034769510, guid: af32dddb047acd447810cb3b9ad98001,
+  cowPrefab: {fileID: 7619421742870409938, guid: cd291bb25c62979429b12a9bafc994c6,
     type: 3}
   player: {fileID: 6763718125959483807, guid: 4f11f25ba5017aa44951a522ae32bc93, type: 3}
   attackDistance: 100
   attackInterval: 2
-  damage: 10
   bloodSplatter: {fileID: 315319170275948959, guid: 8a8cc5ff7acbe1d46ba7aabf93468bb4,
     type: 3}
 --- !u!114 &5146407104228357449

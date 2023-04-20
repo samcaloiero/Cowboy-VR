@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.342894, g: 0.4340664, b: 0.575182, a: 1}
+  m_IndirectSpecularColor: {r: 0.624944, g: 0.69059056, b: 0.7929828, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1697,10 +1697,10 @@ GameObject:
   - component: {fileID: 1404371928}
   - component: {fileID: 1404371927}
   - component: {fileID: 1404371926}
-  - component: {fileID: 1404371925}
   - component: {fileID: 1404371923}
   - component: {fileID: 1404371929}
   - component: {fileID: 1404371930}
+  - component: {fileID: 1404371931}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -1728,20 +1728,6 @@ MonoBehaviour:
   cowCatchHeight: 30
   enemyCatchDistance: 500
   enemyCatchSpeed: 20
---- !u!64 &1404371925
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404371922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1404371926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1835,10 +1821,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0140fd1ada45db94cb236b8df7cc353d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yPositionFrozen: 1
   bulletCollisionCount: 0
   maxBulletCollisions: 5
   targetHeight: 100
   speed: 5
+--- !u!65 &1404371931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404371922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000002, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1524801277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,9 +1868,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05bfa6f3ffafe7c4d987448fdc8ce18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveText: {fileID: 0}
+  cowCountText: {fileID: 0}
   gameState: 0
+  numOfRounds: 0
+  waveRound: 0
   enemySpawner: {fileID: 740309575}
   numberOfAliens: 0
+  newWaveSound: {fileID: 0}
+  enemySpawnController: {fileID: 0}
+  numEnemiesSpawn: 0
   numberOfCows: 0
 --- !u!4 &1524801279
 Transform:

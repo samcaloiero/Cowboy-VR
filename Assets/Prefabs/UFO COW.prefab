@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7631572277467707970}
   - component: {fileID: 7559500449766829792}
   - component: {fileID: 7618135076129485204}
-  - component: {fileID: 7618135076129485207}
   - component: {fileID: 969377757470690627}
+  - component: {fileID: -6833595245933469332}
+  - component: {fileID: -5689606991544444316}
   m_Layer: 0
   m_Name: UFO COW
   m_TagString: Cow
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7619421742870409938}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.612606, y: 0.3085785, z: -17.52653}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -121,22 +122,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
---- !u!136 &7618135076129485207
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7619421742870409938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.1024168
-  m_Height: 1.5878397
-  m_Direction: 1
-  m_Center: {x: 0.0036770701, y: 0.7879247, z: 0.18635759}
 --- !u!82 &969377757470690627
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,3 +220,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6833595245933469332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619421742870409938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c96e178e99f0ab41a1ce0cbc468ee2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  detectionRange: 10
+  roamRadius: 10
+  roamSpeed: 2
+--- !u!65 &-5689606991544444316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619421742870409938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92018014, y: 1.5878397, z: 2.2048335}
+  m_Center: {x: 0.0036770701, y: 0.7879247, z: 0.18635759}

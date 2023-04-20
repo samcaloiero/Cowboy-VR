@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,13 +6,13 @@ using UnityEngine;
 public class UFOController : MonoBehaviour
 {
     private Rigidbody _rb;
-    public bool yPositionFrozen = true; 
+    public bool yPositionFrozen = true;
     public int bulletCollisionCount = 0;
     public int maxBulletCollisions = 5;
     public float targetHeight = 10f;
-    public float speed = 5f;  // The speed at which to move the object
+    public float speed = 5f; // The speed at which to move the object
 
-    private bool movingUp = true;  // Whether the object is currently moving up or not
+    private bool movingUp = true; // Whether the object is currently moving up or not
 
     private void Start()
     {
@@ -21,9 +22,11 @@ public class UFOController : MonoBehaviour
         // Freeze the Y position
         if (yPositionFrozen)
         {
+            _rb.constraints = RigidbodyConstraints.FreezeRotationY;
             _rb.constraints = RigidbodyConstraints.FreezePositionY;
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -35,11 +38,12 @@ public class UFOController : MonoBehaviour
             }
         }
     }
+
     private void MoveUp()
     {
         if (movingUp)
         {
-            _rb.constraints &= ~RigidbodyConstraints.FreezePositionY;
+            yPositionFrozen = false;
             transform.Translate(Vector3.up * speed * Time.deltaTime); // Move the object upwards
             if (transform.position.y >= targetHeight)
             {
@@ -48,7 +52,26 @@ public class UFOController : MonoBehaviour
         }
         else
         {
-            _rb.constraints = RigidbodyConstraints.FreezePositionY;
+            yPositionFrozen = true;
+            _rb.constraints = RigidbodyConstraints.FreezeRotationY;
+
         }
     }
+
+    private void Update()
+    {
+        if (yPositionFrozen == false)
+        {
+            StartCoroutine(DestroyAfterDelayCoroutine());
+        }
+
+    }
+
+    private IEnumerator DestroyAfterDelayCoroutine()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
+    }
 }
+
+
