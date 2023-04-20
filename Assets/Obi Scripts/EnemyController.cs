@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
             // Move towards the target cow
             Vector3 direction = targetCow.transform.position - transform.position;
             transform.position += direction.normalized * speed * Time.deltaTime;
+            transform.LookAt(targetCow.transform.position);
         }
     }
 
