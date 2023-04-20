@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/FINAL MAP MAP 1.unity
+    guid: 3653e7a13059e4d438d837fc559ea487
+  - enabled: 0
     path: Assets/Scenes/FINAL MAP OBI.unity
     guid: 2a94003522a42294382e0991bab795a8
   m_configObjects:
