@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    
    // public SceneAsset gameScene;
 
     public void GoToGameScene()
@@ -14,7 +15,7 @@ public class SceneController : MonoBehaviour
         //this works in editor
         // string path = AssetDatabase.GetAssetPath(gameScene);
         // SceneManager.LoadScene(path);
-        SceneManager.LoadScene("Scenes/FINAL MAP");
+        SceneManager.LoadScene("CompleteMapObi");
 
     }
 }
