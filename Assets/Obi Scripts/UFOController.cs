@@ -64,6 +64,10 @@ public class UFOController : MonoBehaviour
         {
             StartCoroutine(DestroyAfterDelayCoroutine());
         }
+        if (bulletCollisionCount >= 20)
+        {
+            DestroyObject(this);
+        }
 
     }
 

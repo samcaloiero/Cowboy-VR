@@ -63,11 +63,12 @@ public class GameManager : MonoBehaviour
         GameObject[] cows = GameObject.FindGameObjectsWithTag("Cow");
         numberOfCows = cows.Length;
         //Increase wave amount if we have one alien left
+        waveText.text = ("Aliens" + numberOfAliens);
         if (numberOfAliens == 1)
         {
             waveRound += 1;
             waveCounterTMP -= 1;
-            waveText.text = ("Wave :" + waveCounterTMP);
+            
             WaveManager();
         }
         //if wave countdown complete, go to win screen
